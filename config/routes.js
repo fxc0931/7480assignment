@@ -28,6 +28,9 @@ module.exports.routes = {
     view: 'pages/homepage'
   },
   '/search': 'EventMgtController.search',
+  '/create': 'EventMgtController.create',
+  '/detail/:id': 'EventMgtController.detail',
+  '/admin': 'EventMgtController.admin',
 
   /***************************************************************************
   *                                                                          *

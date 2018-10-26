@@ -1,0 +1,97 @@
+<div id="showTable">
+        <table class="table table-striped">
+                <tbody>
+                    <tr onclick="goUpdate('1')">
+            <td style="color: #0069d9">Mark</td>
+            
+                    </tr>
+                    <tr>
+            
+                        <td style="color: #0069d9">Jacob</td>
+            
+                    </tr>
+                    <tr>
+            
+                        <td style="color: #0069d9">Larry</td>
+            
+                    </tr>
+                    <tr>
+            
+                        <td style="color: #0069d9">Larry</td>
+            
+                    </tr>
+            
+                </tbody>
+            </table>
+</div>
+<div id="showUpdate" style="display: none">
+        <form>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="form-group">
+                            <label for="InputEventName">Event Name:</label>
+                            <input type="text" class="form-control" id="InputEventName" placeholder="Enter Event Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="InputShortDescription">Short Description:</label>
+                            <textarea rows="6" class="form-control" id="InputShortDescription" placeholder="Enter Short Description"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="InputFullDescription">Full Description:</label>
+                            <textarea rows="11" class="form-control" id="InputFullDescription" placeholder="Enter Full Description"></textarea>
+                        </div>
+                        <!-- <br> -->
+                        <button type="button" class="btn btn-danger">Delete</button>
+            
+            
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="form-group">
+                            <label for="InputImageURL">Image URL:</label>
+                            <input type="text" class="form-control" id="InputImageURL" placeholder="Enter Image URL">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlOrgainzer">Orgainzer:</label>
+                            <select class="form-control" id="exampleFormControlOrgainzer">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+            
+                        <div class="form-group">
+                            <label for="InputEventDate">Event Date:</label>
+                            <!-- <input type="text" class="form-control" id="InputEventDate" placeholder="Enter EventDate"> -->
+                            <input type="text" class="datepicker form-control" id="InputEventDate" placeholder="select Event Date"/>
+                            <!-- <input type="text" class="datepicker" /> -->
+                        </div>
+                        <div class="form-group">
+                            <label for="InputTime">Time:</label>
+                            <input type="text" class="form-control" id="InputTime" placeholder="Enter Time">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlVenue">Venue:</label>
+                            <select class="form-control" id="exampleFormControlVenue">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="InputQuota">Quota:</label>
+                            <input type="text" class="form-control" id="InputQuota" placeholder="Enter Quota">
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheckHighlightedEvent">
+                            <label class="form-check-label" for="defaultCheckHighlightedEvent">
+                                Highlighted Event
+                            </label>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </form>
+</div>
