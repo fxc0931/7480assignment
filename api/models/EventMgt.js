@@ -12,6 +12,39 @@ module.exports = {
     //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
     //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
     //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
+
+    name: {
+      type: "string"
+    },
+    shortD: {
+      type: "string"
+    },
+    fullD: {
+      type: "string"
+    },
+    imageUrl: {
+      type: "string"
+    },
+    orgainzer: {
+      type: "string"
+    },
+    eventDate: {
+      type: "string"
+    },
+    time: {
+      type: "string"
+    },
+    venue: {
+      type: "string"
+    },
+    quota: {
+      type: "string"
+    },
+    highlighted: {
+      type: "string"
+    },
+    
+    
     
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
     //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
@@ -21,6 +54,14 @@ module.exports = {
     //  ╔═╗╔═╗╔═╗╔═╗╔═╗╦╔═╗╔╦╗╦╔═╗╔╗╔╔═╗
     //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
+
+  },
+  getInvalidIdMsg: function (opts) {
+
+    if (typeof opts.id === "undefined" || isNaN(parseInt(opts.id)))
+      return "EventMgt id not specified or with incorrect type.";
+
+    return null;        // falsy
 
   },
 

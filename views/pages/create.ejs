@@ -1,28 +1,28 @@
-<form>
+<form action="/create" method="POST">
     <div class="row">
         <div class="col-lg-6 col-md-12">
             <div class="form-group">
                 <label for="InputEventName">Event Name:</label>
-                <input type="text" class="form-control" id="InputEventName" placeholder="Enter Event Name">
+                <input type="text" class="form-control" id="InputEventName" placeholder="Enter Event Name" name="EventMgt[name]" required>
             </div>
             <div class="form-group">
                 <label for="InputShortDescription">Short Description:</label>
-                <textarea rows="6" class="form-control" id="InputShortDescription" placeholder="Enter Short Description"></textarea>
+                <textarea rows="6" class="form-control" id="InputShortDescription" placeholder="Enter Short Description" name="EventMgt[shortD]"></textarea>
             </div>
             <div class="form-group">
                 <label for="InputFullDescription">Full Description:</label>
-                <textarea rows="11" class="form-control" id="InputFullDescription" placeholder="Enter Full Description"></textarea>
+                <textarea rows="11" class="form-control" id="InputFullDescription" placeholder="Enter Full Description" name="EventMgt[fullD]"></textarea>
             </div>
 
         </div>
         <div class="col-lg-6 col-md-12">
             <div class="form-group">
                 <label for="InputImageURL">Image URL:</label>
-                <input type="text" class="form-control" id="InputImageURL" placeholder="Enter Image URL">
+                <input type="text" class="form-control" id="InputImageURL" placeholder="Enter Image URL" name="EventMgt[imageUrl]">
             </div>
             <div class="form-group">
                 <label for="exampleFormControlOrgainzer">Orgainzer:</label>
-                <select class="form-control" id="exampleFormControlOrgainzer">
+                <select class="form-control" id="exampleFormControlOrgainzer" name="EventMgt[orgainzer]">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -32,17 +32,15 @@
 
             <div class="form-group">
                 <label for="InputEventDate">Event Date:</label>
-                <!-- <input type="text" class="form-control" id="InputEventDate" placeholder="Enter EventDate"> -->
-                <input type="text" class="datepicker form-control" id="InputEventDate" placeholder="select Event Date"/>
-                <!-- <input type="text" class="datepicker" /> -->
+                <input type="text" class="datepicker form-control" id="InputEventDate" placeholder="select Event Date" name="EventMgt[eventDate]"/>
             </div>
             <div class="form-group">
                 <label for="InputTime">Time:</label>
-                <input type="text" class="form-control" id="InputTime" placeholder="Enter Time">
+                <input type="text" class="form-control" id="InputTime" placeholder="Enter Time" name="EventMgt[time]">
             </div>
             <div class="form-group">
                 <label for="exampleFormControlVenue">Venue:</label>
-                <select class="form-control" id="exampleFormControlVenue">
+                <select class="form-control" id="exampleFormControlVenue" name="EventMgt[venue]">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -51,16 +49,43 @@
             </div>
             <div class="form-group">
                 <label for="InputQuota">Quota:</label>
-                <input type="text" class="form-control" id="InputQuota" placeholder="Enter Quota">
+                <input type="text" class="form-control" id="InputQuota" placeholder="Enter Quota" name="EventMgt[quota]">
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheckHighlightedEvent">
+                <input class="form-check-input" type="checkbox" value="1" id="defaultCheckHighlightedEvent" name="EventMgt[highlighted]">
                 <label class="form-check-label" for="defaultCheckHighlightedEvent">
                     Highlighted Event
                 </label>
             </div>
-            <br>
+            <br> 
             <button type="submit" class="btn btn-primary">Submit</button>
         </div>
     </div>
 </form>
+<!-- <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      
+      <div class="modal" tabindex="-1" role="dialog" id="myModal">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          

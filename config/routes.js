@@ -31,6 +31,7 @@ module.exports.routes = {
   '/create': 'EventMgtController.create',
   '/detail/:id': 'EventMgtController.detail',
   '/admin': 'EventMgtController.admin',
+  // 'GET /person/view/:id': 'EventMgtController.index',
 
   /***************************************************************************
   *                                                                          *
